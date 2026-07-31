@@ -1,9 +1,91 @@
 {
   "schema": 1,
   "app": "ReceptApp",
-  "exported": "2026-07-31T12:43:07.962Z",
-  "recipeCount": 5,
+  "exported": "2026-07-31T12:58:14.196Z",
+  "recipeCount": 6,
   "recipes": [
+    {
+      "id": 7,
+      "title": "Biff med bambuskott",
+      "portions": 2,
+      "category": "Huvudrätt",
+      "instructions": "Strimla lövbiffen. Finhacka lök och vitlök. Strimla salladslöken/purjon. \n\nBlanda ihop soja, ostronsås och hoisinsås. \n\nHetta upp oljan i en panna och stek lövbiffen. Krydda med salt och peppar. \n\nI med grönsakerna och bambuskotten. Häll över såsen och låt puttra en stund. ",
+      "notes": "Servera med ris eller nudlar.",
+      "created": "2026-07-31 12:54:45",
+      "updated": "2026-07-31 12:54:45",
+      "ingredients": [
+        {
+          "id": 279,
+          "amount": "1",
+          "unit": "st",
+          "ingredient": "gul lök",
+          "sort_order": 1
+        },
+        {
+          "id": 280,
+          "amount": "2",
+          "unit": "st",
+          "ingredient": "vitlöksklyftor",
+          "sort_order": 2
+        },
+        {
+          "id": 281,
+          "amount": "",
+          "unit": "",
+          "ingredient": "salladslök eller purjolök",
+          "sort_order": 3
+        },
+        {
+          "id": 282,
+          "amount": "",
+          "unit": "",
+          "ingredient": "champinjoner",
+          "sort_order": 4
+        },
+        {
+          "id": 283,
+          "amount": "1",
+          "unit": "burk",
+          "ingredient": "bambuskott",
+          "sort_order": 5
+        },
+        {
+          "id": 284,
+          "amount": "0.5",
+          "unit": "dl",
+          "ingredient": "japans soja",
+          "sort_order": 6
+        },
+        {
+          "id": 285,
+          "amount": "0.5",
+          "unit": "dl",
+          "ingredient": "ostronsås",
+          "sort_order": 7
+        },
+        {
+          "id": 286,
+          "amount": "0.5",
+          "unit": "dl",
+          "ingredient": "hoisinsås",
+          "sort_order": 8
+        },
+        {
+          "id": 287,
+          "amount": "",
+          "unit": "",
+          "ingredient": "salt och peppar",
+          "sort_order": 9
+        },
+        {
+          "id": 288,
+          "amount": "",
+          "unit": "",
+          "ingredient": "ev. redning",
+          "sort_order": 10
+        }
+      ]
+    },
     {
       "id": 6,
       "title": "Bönsallad",

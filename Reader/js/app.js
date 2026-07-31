@@ -10,7 +10,7 @@ const app = {
 let wakeLock = null;
 let currentRecipe = null;
 
-/* async function enableWakeLock() {
+async function enableWakeLock() {
 
     if (!("wakeLock" in navigator) || wakeLock) {
         return;
@@ -26,35 +26,6 @@ let currentRecipe = null;
     catch (err) {
 
         console.warn("Wake Lock kunde inte aktiveras:", err);
-
-    }
-
-} */
-
-    async function enableWakeLock() {
-
-    console.log("enableWakeLock()");
-
-    console.log("navigator.wakeLock =", navigator.wakeLock);
-
-    if (!("wakeLock" in navigator)) {
-
-        console.log("Wake Lock stöds inte.");
-
-        return;
-
-    }
-
-    try {
-
-        wakeLock = await navigator.wakeLock.request("screen");
-
-        console.log("Wake Lock AKTIVERAD");
-
-    }
-    catch (err) {
-
-        console.error(err);
 
     }
 
