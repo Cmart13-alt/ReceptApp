@@ -251,16 +251,15 @@ function showRecipe(recipe) {
 
     instructionCard.className = "recipe-section";
 
-    const steps =
-        recipe.instructions
-            .split(/\r?\n\s*\r?\n/)
-            .map(step =>
-                step
-                    .replace(/\r?\n/g, " ")
-                    .replace(/\s+/g, " ")
-                    .trim()
-            )
-            .filter(step => step.length > 0);
+    const steps = (recipe.instructions ?? "")
+        .split(/\r?\n\s*\r?\n/)
+        .map(step =>
+            step
+                .replace(/\r?\n/g, " ")
+                .replace(/\s+/g, " ")
+                .trim()
+        )
+        .filter(step => step.length > 0);
 
     if (steps.length > 1) {
 
@@ -270,49 +269,57 @@ function showRecipe(recipe) {
 
             div.className = "step";
 
-            div.innerHTML = `<strong>${index + 1}.</strong> ${step}`;
+            const number = document.createElement("strong");
+
+            number.textContent = `${index + 1}.`;
+
+            div.append(number, " ", step);
 
             instructionCard.appendChild(div);
-
-        
 
         });
 
     }
-    else {
+    else if (steps.length === 1) {
 
         const p = document.createElement("p");
 
-        p.textContent = recipe.instructions;
+        p.textContent = steps[0];
 
         instructionCard.appendChild(p);
 
     }
 
-    content.appendChild(instructionCard);
     //
-    // Anteckningar
+    // Tips
     //
 
+    if (recipe.notes?.trim()) {
 
-    if (recipe.notes) {
+        const tipsHeading = document.createElement("h3");
 
-        const heading3 = document.createElement("h2");
+        tipsHeading.textContent = "Tips";
 
-        heading3.textContent = "Anteckningar";
+        instructionCard.appendChild(tipsHeading);
 
-        content.appendChild(heading3);
+        recipe.notes
+            .split(/\r?\n\s*\r?\n/)
+            .map(note => note.trim())
+            .filter(note => note.length > 0)
+            .forEach(note => {
 
-        const notes = document.createElement("div");
+                const p = document.createElement("p");
 
-        notes.className = "notes";
+                p.textContent = note;
 
-        notes.textContent = recipe.notes;
+                instructionCard.appendChild(p);
 
-        content.appendChild(notes);
+            });
 
     }
-    
+
+    content.appendChild(instructionCard);
+
     //
     // Tillbaka
     //
