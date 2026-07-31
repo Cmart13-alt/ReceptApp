@@ -271,9 +271,7 @@ function showRecipeList() {
 
         const title = document.createElement("h2");
 
-        title.textContent = recipe.portions
-            ? `${recipe.title} (${recipe.portions} p)`
-            : recipe.title;
+        title.textContent = recipe.title;
 
         titleRow.appendChild(icon);
 
@@ -311,7 +309,7 @@ function showRecipe(recipe) {
 
     const icon = document.createElement("span");
 
-    icon.className = "material-symbols-rounded recipe-icon";
+    icon.className = "material-symbols-rounded recipe-icon-large";
 
     icon.textContent = getRecipeIcon(recipe.category);
 

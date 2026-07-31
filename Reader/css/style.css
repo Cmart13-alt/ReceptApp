@@ -136,7 +136,7 @@ h2 {
 
     color: var(--primary);
 
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 
 }
 
@@ -171,6 +171,8 @@ li {
 p {
 
     line-height: 1.5;
+
+    font-size: 1.1rem;
 
     white-space: pre-wrap;
 
@@ -276,6 +278,8 @@ p {
 
     align-items: center;
 
+    margin-bottom: 0.5rem;
+
     gap: 10px;
 
 }
@@ -309,6 +313,12 @@ p {
     font-size: 24px;
 
     flex-shrink: 0;
+
+}
+
+.recipe-icon-large {
+
+    font-size: 32px;
 
 }
 
