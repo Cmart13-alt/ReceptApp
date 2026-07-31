@@ -31,7 +31,7 @@ async function loadRecipes() {
 
         app.filteredRecipes = [...app.recipes];
 
-        showRecipeList();
+        handleRoute();
 
     }
 
@@ -76,6 +76,44 @@ function showHeader() {
 
 }
 
+function openRecipe(recipe) {
+
+    history.pushState(
+        { id: recipe.id },
+        "",
+        `./?id=${recipe.id}`
+    );
+
+    showRecipe(recipe);
+
+}
+
+function handleRoute() {
+
+    const id = new URLSearchParams(location.search).get("id");
+
+    if (!id) {
+
+        showRecipeList();
+        return;
+
+    }
+
+    const recipe = app.recipes.find(r => String(r.id) === id);
+
+    if (recipe) {
+
+        showRecipe(recipe);
+
+    }
+    else {
+
+        showRecipeList();
+
+    }
+
+}
+
 function getRecipeIcon(category) {
 
     switch (category) {
@@ -109,6 +147,8 @@ function showRecipeList() {
 
     showHeader();
 
+    document.title = "Alla recept";
+
     const content = document.getElementById("content");
 
     content.replaceChildren();
@@ -129,7 +169,7 @@ function showRecipeList() {
 
         card.addEventListener("click", () => {
 
-            showRecipe(recipe);
+            openRecipe(recipe);
 
         });
 
@@ -162,6 +202,8 @@ function showRecipeList() {
 function showRecipe(recipe) {
 
     hideHeader();
+
+    document.title = `${recipe.title} – Recept`;
 
     const content = document.getElementById("content");
 
@@ -333,12 +375,32 @@ function showRecipe(recipe) {
     <span>Alla recept</span>
     `;
 
-    back.addEventListener("click", showRecipeList);
+    back.addEventListener("click", () => {
+
+        if (history.length > 1) {
+
+            history.back();
+
+        } else {
+
+            history.pushState({}, "", "./");
+
+            showRecipeList();
+
+        }
+
+    });
 
     content.appendChild(back);
     
 
 }
+
+window.addEventListener("popstate", () => {
+
+    handleRoute();
+
+});
 
 if ("serviceWorker" in navigator) {
 
