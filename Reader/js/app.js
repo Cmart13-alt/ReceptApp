@@ -238,7 +238,7 @@ function showRecipeList() {
 
 function showRecipe(recipe) {
 
-    hideHeader();F
+    hideHeader();
 
     document.title = `${recipe.title} – Recept`;
 
