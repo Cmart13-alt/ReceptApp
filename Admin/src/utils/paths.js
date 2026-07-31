@@ -12,7 +12,7 @@ module.exports = {
 
     RECIPES_JSON: path.join(ROOT, "Reader", "data", "recipes.json"),
 
-    VERSION_JSON: path.join(ROOT, "Reader", "data", "version.json"),
+    VERSION_JSON: path.join(ROOT, "Reader", "version.json"),
 
     SERVICE_WORKER: path.join(ROOT, "Reader", "service-worker.js"),
 
