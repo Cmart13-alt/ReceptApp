@@ -1,29 +1,24 @@
-const CACHE_NAME = "recipereader-1785444238628";
+
+const CACHE_NAME = "recipe-reader-1785492686595";
 
 const FILES = [
-
-    "./",
-    "./index.html",
-    "./css/style.css",
-    "./js/app.js",
-    "./manifest.json",
-    "./version.json",
-
-    "./data/recipes.json",
-
-    "./icons/icon-192.png",
-    "./icons/icon-512.png",
-    "./icons/maskable-icon-512.png"
-
+    "/css/style.css",
+    "/data/recipes.json",
+    "/data/version.json",
+    "/icons/icon-192.png",
+    "/icons/icon-512.png",
+    "/icons/maskable-icon-512.png",
+    "/index.html",
+    "/js/app.js",
+    "/manifest.json",
+    "/version.json"
 ];
 
 self.addEventListener("install", event => {
 
-    self.skipWaiting();
     event.waitUntil(
 
-        caches
-            .open(CACHE_NAME)
+        caches.open(CACHE_NAME)
             .then(cache => cache.addAll(FILES))
 
     );
@@ -34,39 +29,32 @@ self.addEventListener("activate", event => {
 
     event.waitUntil(
 
-        (async () => {
+        caches.keys()
+            .then(keys =>
 
-            const keys = await caches.keys();
+                Promise.all(
 
-            await Promise.all(
+                    keys.map(key => {
 
-                keys
-                    .filter(key => key !== CACHE_NAME)
-                    .map(key => caches.delete(key))
+                        if (key !== CACHE_NAME) {
 
-            );
+                            return caches.delete(key);
 
-            await self.clients.claim();
+                        }
 
-        })()
+                    })
+
+                )
+
+            )
 
     );
+
+    self.clients.claim();
 
 });
 
 self.addEventListener("fetch", event => {
-
-    if (event.request.mode === "navigate") {
-
-        event.respondWith(
-
-            fetch(event.request)
-                .catch(() => caches.match("./index.html"))
-
-        );
-
-        return;
-    }
 
     event.respondWith(
 

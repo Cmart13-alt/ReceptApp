@@ -4,7 +4,7 @@ const db = require("../db");
 const router = express.Router();
 
 router.get("/new", (req, res) => {
-    res.sendFile(path.join(__dirname, "..", "..", "app", "recipes", "recipe.html"));
+    res.sendFile(path.join(__dirname, "..", "..", "app", "index.html"));
 });
 
 router.get("/list", async (req, res) => {

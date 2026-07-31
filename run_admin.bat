@@ -5,7 +5,7 @@ cd /d "%~dp0Admin"
 
 start "" cmd /k npm start
 
-echo Väntar på att servern ska starta...
+echo Waiting for server to start...
 
 :wait
 curl -s http://localhost:3000 >nul 2>&1
@@ -14,6 +14,6 @@ if errorlevel 1 (
     goto wait
 )
 
-start "" http://localhost:3000/recipes/recipe.html
+start "" http://localhost:3000
 
 exit

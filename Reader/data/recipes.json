@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "app": "ReceptApp",
-  "exported": "2026-07-30T20:43:58.628Z",
+  "exported": "2026-07-31T10:11:26.595Z",
   "recipeCount": 5,
   "recipes": [
     {
@@ -337,111 +337,111 @@
       "title": "Pannbiff med löksky",
       "portions": 4,
       "category": "Huvudrätt",
-      "instructions": "Sätt ugnen på 200 grader. Blanda mjölk med ströbröd och låt svälla 5-10 minuter.\n\nBlanda ner färsen, riven lök, ägg och kryddor. Forma pannbiffar och stek i smör, ett par minuter på varje sida tills de fått fin färg. Efterstek biffarna i ugn, ca 5-10 minuter tills de är genomstekta. \n\nSkala och skiva löken och bryn i stekpanna eller kastrull. Tillsätt sockret mot slutet och låt det karamelliseras lätt. Pudra över mjölet, tillsätt vatten och buljongtärning. Låt såsen koka ihop en stund och smaka av med salt och peppar. \n\nServera med nykokt potatis och saltgurka.",
-      "notes": "",
+      "instructions": "Sätt ugnen på 200 grader. Blanda mjölk med ströbröd och låt svälla 5-10 minuter.\n\nBlanda ner färsen, riven lök, ägg och kryddor. Forma pannbiffar och stek i smör, ett par minuter på varje sida tills de fått fin färg. Efterstek biffarna i ugn, ca 5-10 minuter tills de är genomstekta. \n\nSkala och skiva löken och bryn i stekpanna eller kastrull. Tillsätt sockret mot slutet och låt det karamelliseras lätt. Pudra över mjölet, tillsätt vatten och buljongtärning. Låt såsen koka ihop en stund och smaka av med salt och peppar.",
+      "notes": "Servera med nykokt potatis och saltgurka.",
       "created": "2026-07-29 16:04:07",
       "updated": "2026-07-29 16:04:07",
       "ingredients": [
         {
-          "id": 123,
+          "id": 208,
           "amount": "600",
           "unit": "g",
           "ingredient": "blandfärs",
           "sort_order": 1
         },
         {
-          "id": 124,
+          "id": 209,
           "amount": "1",
           "unit": "st",
           "ingredient": "gul lök",
           "sort_order": 2
         },
         {
-          "id": 125,
+          "id": 210,
           "amount": "1",
           "unit": "st",
           "ingredient": "ägg",
           "sort_order": 3
         },
         {
-          "id": 126,
+          "id": 211,
           "amount": "0.75",
           "unit": "dl",
           "ingredient": "ströbröd",
           "sort_order": 4
         },
         {
-          "id": 127,
+          "id": 212,
           "amount": "1",
           "unit": "dl",
           "ingredient": "mjölk",
           "sort_order": 5
         },
         {
-          "id": 128,
+          "id": 213,
           "amount": "2",
           "unit": "tsk",
           "ingredient": "salt",
           "sort_order": 6
         },
         {
-          "id": 129,
+          "id": 214,
           "amount": "0.5",
           "unit": "tsk",
           "ingredient": "vitpeppar",
           "sort_order": 7
         },
         {
-          "id": 130,
+          "id": 215,
           "amount": "",
           "unit": "avdelare",
           "ingredient": "Löksky",
           "sort_order": 8
         },
         {
-          "id": 131,
+          "id": 216,
           "amount": "2",
           "unit": "st",
           "ingredient": "gula lökar",
           "sort_order": 9
         },
         {
-          "id": 132,
+          "id": 217,
           "amount": "2",
           "unit": "msk",
           "ingredient": "smör",
           "sort_order": 10
         },
         {
-          "id": 133,
+          "id": 218,
           "amount": "2",
           "unit": "tsk",
           "ingredient": "socker",
           "sort_order": 11
         },
         {
-          "id": 134,
+          "id": 219,
           "amount": "1",
           "unit": "msk",
           "ingredient": "vetemjöl",
           "sort_order": 12
         },
         {
-          "id": 135,
+          "id": 220,
           "amount": "1",
           "unit": "tärning",
           "ingredient": "oxbuljong",
           "sort_order": 13
         },
         {
-          "id": 136,
+          "id": 221,
           "amount": "",
           "unit": "",
           "ingredient": "salt och peppar",
           "sort_order": 14
         },
         {
-          "id": 137,
+          "id": 222,
           "amount": "",
           "unit": "",
           "ingredient": "saltgurka till servering",

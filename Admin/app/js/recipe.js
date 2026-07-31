@@ -57,8 +57,8 @@ function bindEvents() {
         .addEventListener("input", searchRecipes);
 
     document
-    .getElementById("btnExport")
-    .addEventListener("click", exportToReader);
+    .getElementById("btnPublish")
+    .addEventListener("click", publishToReader);
 
 }
 
@@ -683,14 +683,14 @@ function searchRecipes() {
 }
 
 // -----------------------------------------------------------------------------
-// Exportera JSON
+// Publicera sidan
 // -----------------------------------------------------------------------------
 
-async function exportToReader() {
+async function publishToReader() {
 
     try {
 
-        const response = await fetch("/api/export-reader", {
+        const response = await fetch("/api/publish", {
 
             method: "POST"
 
