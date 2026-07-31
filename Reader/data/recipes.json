@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "app": "ReceptApp",
-  "exported": "2026-07-31T13:41:00.409Z",
-  "recipeCount": 6,
+  "exported": "2026-07-31T13:59:58.355Z",
+  "recipeCount": 7,
   "recipes": [
     {
       "id": 7,
@@ -165,6 +165,74 @@
           "unit": "",
           "ingredient": "salt och peppar",
           "sort_order": 10
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Kyckling i currysås",
+      "portions": 4,
+      "category": "Huvudrätt",
+      "instructions": "Sätt ugnen på 180 grader.\n\nLägg klubborna i en ugnsform, salta lite. \n\nMixa eller vispa ihop alla ingredienser till såsen \noch häll över kycklingklubborna. Krydda med lite \nchiliflakes efter smak. \n\nGratinera i ca 50 minuter.",
+      "notes": "Servera med ris och sallad.",
+      "created": "2026-07-31 13:54:01",
+      "updated": "2026-07-31 13:54:01",
+      "ingredients": [
+        {
+          "id": 289,
+          "amount": "1",
+          "unit": "kg",
+          "ingredient": "Kycklingben, kycklingklubba eller kycklingfilé",
+          "sort_order": 1
+        },
+        {
+          "id": 290,
+          "amount": "1.5",
+          "unit": "dl",
+          "ingredient": "vispgrädde",
+          "sort_order": 2
+        },
+        {
+          "id": 291,
+          "amount": "1",
+          "unit": "dl",
+          "ingredient": "vatten",
+          "sort_order": 3
+        },
+        {
+          "id": 292,
+          "amount": "1",
+          "unit": "msk",
+          "ingredient": "kycklingfond",
+          "sort_order": 4
+        },
+        {
+          "id": 293,
+          "amount": "3",
+          "unit": "msk",
+          "ingredient": "tomatpuré",
+          "sort_order": 5
+        },
+        {
+          "id": 294,
+          "amount": "2",
+          "unit": "tsk",
+          "ingredient": "curry",
+          "sort_order": 6
+        },
+        {
+          "id": 295,
+          "amount": "",
+          "unit": "",
+          "ingredient": "salt",
+          "sort_order": 7
+        },
+        {
+          "id": 296,
+          "amount": "",
+          "unit": "",
+          "ingredient": "chiliflakes",
+          "sort_order": 8
         }
       ]
     },

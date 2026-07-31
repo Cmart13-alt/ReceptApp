@@ -271,7 +271,9 @@ function showRecipeList() {
 
         const title = document.createElement("h2");
 
-        title.textContent = recipe.title;
+        title.textContent = recipe.portions
+            ? `${recipe.title} (${recipe.portions} p)`
+            : recipe.title;
 
         titleRow.appendChild(icon);
 
@@ -428,11 +430,11 @@ function showRecipe(recipe) {
 
     if (recipe.notes?.trim()) {
 
-        const tipsHeading = document.createElement("h3");
+/*         const tipsHeading = document.createElement("h3");
 
         tipsHeading.textContent = "Tips";
 
-        instructionCard.appendChild(tipsHeading);
+        instructionCard.appendChild(tipsHeading); */
 
         recipe.notes
             .split(/\r?\n\s*\r?\n/)
