@@ -54,11 +54,48 @@ function searchRecipes() {
         .trim()
         .toLowerCase();
 
-    app.filteredRecipes = app.recipes.filter(recipe =>
-        recipe.title
-            .toLowerCase()
-            .includes(text)
-    );
+    if (!text) {
+
+        app.filteredRecipes = [...app.recipes];
+
+        showRecipeList();
+
+        return;
+
+    }
+
+    app.filteredRecipes = app.recipes.filter(recipe => {
+
+        const titleMatch =
+            recipe.title
+                .toLowerCase()
+                .includes(text);
+
+        const categoryMatch =
+            (recipe.category ?? "")
+                .toLowerCase()
+                .includes(text);
+
+        const notesMatch =
+            (recipe.notes ?? "")
+                .toLowerCase()
+                .includes(text);
+
+        const ingredientMatch =
+            recipe.ingredients.some(ingredient =>
+                (ingredient.ingredient ?? "")
+                    .toLowerCase()
+                    .includes(text)
+            );
+
+        return (
+            titleMatch ||
+            categoryMatch ||
+            notesMatch ||
+            ingredientMatch
+        );
+
+    });
 
     showRecipeList();
 
@@ -201,7 +238,7 @@ function showRecipeList() {
 
 function showRecipe(recipe) {
 
-    hideHeader();
+    hideHeader();F
 
     document.title = `${recipe.title} – Recept`;
 
