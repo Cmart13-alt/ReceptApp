@@ -133,7 +133,7 @@ function getRecipeIcon(category) {
             return "tapas";
 
         case "Huvudrätt":
-            return "restaurant";
+            return "skillet";
 
         case "Dessert":
             return "cake";
@@ -148,7 +148,7 @@ function getRecipeIcon(category) {
             return "local_bar";
 
         default:
-            return "menu_book";
+            return "yoshoku";
 
     }
 
