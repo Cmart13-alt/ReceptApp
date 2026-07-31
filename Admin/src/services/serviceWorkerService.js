@@ -19,7 +19,7 @@ function getFiles(dir, root = dir) {
         }
 
         files.push(
-            "/" + path.relative(root, fullPath).replace(/\\/g, "/")
+            "./" + path.relative(root, fullPath).replace(/\\/g, "/")
         );
 
     }
