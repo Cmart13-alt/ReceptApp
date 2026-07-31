@@ -60,6 +60,10 @@ function bindEvents() {
     .getElementById("btnPublish")
     .addEventListener("click", publishToReader);
 
+    document
+    .getElementById("btnReader")
+    .addEventListener("click", openReader);
+
 }
 
 /******************************************************************
@@ -712,5 +716,18 @@ async function publishToReader() {
         showError(err.message);
 
     }
+
+}
+
+// -----------------------------------------------------------------------------
+// Öppna Reader
+// -----------------------------------------------------------------------------
+
+function openReader() {
+
+    window.open(
+        "https://cmart13-alt.github.io/ReceptApp/",
+        "_blank"
+    );
 
 }
