@@ -218,6 +218,9 @@ function getRecipeIcon(category) {
         case "Dryck":
             return "local_bar";
 
+        case "Tillbehör":
+            return "local_pizza";
+
         default:
             return "yoshoku";
 
