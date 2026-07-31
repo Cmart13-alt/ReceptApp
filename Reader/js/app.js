@@ -7,6 +7,51 @@ const app = {
 
 };
 
+let wakeLock = null;
+let currentRecipe = null;
+
+async function enableWakeLock() {
+
+    if (!("wakeLock" in navigator) || wakeLock) {
+        return;
+    }
+
+    try {
+
+        wakeLock = await navigator.wakeLock.request("screen");
+
+        console.log("Wake Lock aktiv");
+
+    }
+    catch (err) {
+
+        console.warn("Wake Lock kunde inte aktiveras:", err);
+
+    }
+
+}
+
+async function disableWakeLock() {
+
+    if (!wakeLock) {
+        return;
+    }
+
+    try {
+
+        await wakeLock.release();
+
+        console.log("Wake Lock släppt");
+
+    }
+    finally {
+
+        wakeLock = null;
+
+    }
+
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
 
     document
@@ -184,6 +229,10 @@ function showRecipeList() {
 
     showHeader();
 
+    currentRecipe = null;
+
+    disableWakeLock();
+
     document.title = "Alla recept";
 
     const content = document.getElementById("content");
@@ -239,6 +288,10 @@ function showRecipeList() {
 function showRecipe(recipe) {
 
     hideHeader();
+
+    currentRecipe = recipe;
+
+    enableWakeLock();
 
     document.title = `${recipe.title} – Recept`;
 
@@ -436,6 +489,20 @@ function showRecipe(recipe) {
 window.addEventListener("popstate", () => {
 
     handleRoute();
+
+});
+
+document.addEventListener("visibilitychange", () => {
+
+    if (
+        document.visibilityState === "visible" &&
+        currentRecipe &&
+        wakeLock === null
+    ) {
+
+        enableWakeLock();
+
+    }
 
 });
 
