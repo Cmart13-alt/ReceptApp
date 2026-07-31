@@ -32,7 +32,7 @@ async function exportReader() {
     logger.success("recipes.json");
 
     logger.step("Skriver version.json");
-
+console.log("VERSION_JSON =", PATHS.VERSION_JSON);
     fs.writeFileSync(
 
         PATHS.VERSION_JSON,
