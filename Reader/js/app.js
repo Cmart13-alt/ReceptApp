@@ -216,10 +216,10 @@ function getRecipeIcon(category) {
             return "bakery_dining";
 
         case "Dryck":
-            return "local_cafe";
+            return "local_bar";
 
         default:
-            return "menu_book";
+            return "yoshoku";
 
     }
 
