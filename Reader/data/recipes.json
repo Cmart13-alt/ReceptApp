@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "app": "ReceptApp",
-  "exported": "2026-07-31T10:41:58.912Z",
+  "exported": "2026-07-31T10:43:34.418Z",
   "recipeCount": 5,
   "recipes": [
     {
@@ -9,76 +9,76 @@
       "title": "Bönsallad",
       "portions": 2,
       "category": "Sallad",
-      "instructions": "Skölj bönorna. Blanda alla ingredienser i en skål och rör om. Smaka av med med salt och peppar. Låt dra i kylen minst 20 min.\n\n",
+      "instructions": "Skölj bönorna. Blanda alla ingredienser i en skål och rör om. Smaka av med med salt och peppar. Låt dra i kylen minst 20 min.",
       "notes": "Servera till grillat.",
       "created": "2026-07-30 16:40:45",
       "updated": "2026-07-30 16:40:45",
       "ingredients": [
         {
-          "id": 238,
+          "id": 263,
           "amount": "2",
           "unit": "burkar",
           "ingredient": "blandade bönor(kidney, vita, kikärter)",
           "sort_order": 1
         },
         {
-          "id": 239,
+          "id": 264,
           "amount": "2",
           "unit": "st",
           "ingredient": "morötter i tunna skivor",
           "sort_order": 2
         },
         {
-          "id": 240,
+          "id": 265,
           "amount": "1",
           "unit": "st",
           "ingredient": "rödlök",
           "sort_order": 3
         },
         {
-          "id": 241,
+          "id": 266,
           "amount": "2",
           "unit": "st",
           "ingredient": "skivade vitlöksklyftor",
           "sort_order": 4
         },
         {
-          "id": 242,
+          "id": 267,
           "amount": "16",
           "unit": "st",
           "ingredient": "körsbärstomater, delade",
           "sort_order": 5
         },
         {
-          "id": 243,
+          "id": 268,
           "amount": "1",
           "unit": "st",
           "ingredient": "tunt skivad fänkål",
           "sort_order": 6
         },
         {
-          "id": 244,
+          "id": 269,
           "amount": "",
           "unit": "",
           "ingredient": "färsk persilja eller basilika",
           "sort_order": 7
         },
         {
-          "id": 245,
+          "id": 270,
           "amount": "2",
           "unit": "msk",
           "ingredient": "olivolja",
           "sort_order": 8
         },
         {
-          "id": 246,
+          "id": 271,
           "amount": "2",
           "unit": "msk",
           "ingredient": "röd balsamvinäger",
           "sort_order": 9
         },
         {
-          "id": 247,
+          "id": 272,
           "amount": "",
           "unit": "",
           "ingredient": "salt och peppar",
