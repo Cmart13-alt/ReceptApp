@@ -289,7 +289,7 @@ function showRecipe(recipe) {
 
     }
 
-    content.appendChild(instructionCard);
+   
     //
     // Anteckningar
     //
@@ -297,16 +297,23 @@ function showRecipe(recipe) {
 
     if (recipe.notes) {
 
+        const heading3 = document.createElement("<br>");
 
-        const notes = document.createElement("div");
+        heading3.textContent = "Anteckningar";
 
+        content.appendChild(heading3);
+
+        const notes = document.createElement("<br>");
+/* 
         notes.className = "notes";
-
+ */
         notes.textContent = recipe.notes;
 
         content.appendChild(notes);
 
     }
+
+     content.appendChild(instructionCard);
     
     //
     // Tillbaka
