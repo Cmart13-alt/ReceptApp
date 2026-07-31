@@ -1,0 +1,525 @@
+/* ==========================================================
+   Mina recept
+   ========================================================== */
+
+
+/* ==========================================================
+   Reset
+   ========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================
+   Grundlayout
+   ========================================================== */
+
+body {
+
+    background: #d8d8d8;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #333;
+    padding: 10px;
+
+}
+
+#app {
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+    background: #fff;
+    border: 1px solid #9a9a9a;
+
+}
+
+
+/* ==========================================================
+   Header
+   ========================================================== */
+
+header {
+
+    background: #2d3748;
+    color: white;
+    padding: 16px 20px;
+
+}
+
+header h1 {
+
+    font-size: 1.6rem;
+    font-weight: 600;
+
+}
+
+
+/* ==========================================================
+   Layout
+   ========================================================== */
+
+.recipe-layout {
+
+    display: grid;
+
+    grid-template-columns: 280px 1fr;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    align-items: start;
+
+}
+
+.recipe-item {
+
+    display: grid;
+
+    grid-template-columns: 30px 1fr auto;
+
+    gap: 8px;
+
+    align-items: center;
+
+    padding: 8px 10px;
+
+    cursor: pointer;
+
+    border-bottom: 1px solid #ececec;
+
+}
+
+.recipe-icon {
+
+    font-size: 24px;
+
+    color: #2e7d32;
+
+    flex-shrink: 0;
+
+}
+
+.recipe-item:hover {
+
+    background: #f2f2f2;
+
+}
+
+.recipe-item.selected {
+
+    background: #e8eef7;
+
+    border-left: 4px solid #2d3748;
+
+}
+
+.recipe-title {
+
+    font-weight: 500;
+
+}
+
+.recipe-category {
+
+    color: #666;
+
+    font-size: .9rem;
+
+}
+
+
+/* ==========================================================
+   Sidopanel
+   ========================================================== */
+
+.recipe-sidebar {
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #c7c7c7;
+
+    padding: 15px;
+
+}
+
+.recipe-sidebar h2 {
+
+    margin-bottom: 15px;
+
+}
+
+#search {
+
+    width: 100%;
+    margin-bottom: 12px;
+
+}
+
+#recipeList {
+
+    flex: 1;
+
+    min-height: 500px;
+
+    border: 1px solid #d8d8d8;
+
+    background: white;
+
+    overflow-y: auto;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* ==========================================================
+   Editor
+   ========================================================== */
+
+.recipe-editor {
+
+    min-width: 0;
+
+}
+
+.recipe-editor h2 {
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ==========================================================
+   Status
+   ========================================================== */
+
+.status-message {
+
+    display: none;
+
+    margin-bottom: 20px;
+
+    padding: 10px 14px;
+
+    border-radius: 4px;
+
+}
+
+.status-message.success {
+
+    display: block;
+
+    background: #d4edda;
+
+    border: 1px solid #c3e6cb;
+
+    color: #155724;
+
+}
+
+
+/* ==========================================================
+   Formulär
+   ========================================================== */
+
+fieldset {
+
+    margin-bottom: 20px;
+
+    padding: 18px;
+
+    border: 1px solid #bdbdbd;
+
+}
+
+legend {
+
+    padding: 0 8px;
+
+    font-weight: 600;
+
+}
+
+.form-grid {
+
+    display: grid;
+
+    grid-template-columns: 120px 1fr;
+
+    gap: 20px;
+
+}
+
+.form-row {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 18px;
+
+}
+
+.form-row:last-child {
+
+    margin-bottom: 0;
+
+}
+
+label {
+
+    margin-bottom: 6px;
+
+    font-weight: 600;
+
+}
+
+
+/* ==========================================================
+   Form controls
+   ========================================================== */
+
+input,
+select,
+textarea,
+button {
+
+    font: inherit;
+
+}
+
+input,
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 8px;
+
+    border: 1px solid #999;
+
+}
+
+textarea {
+
+    resize: vertical;
+
+}
+
+
+/* ==========================================================
+   Ingredienser
+   ========================================================== */
+
+.ingredient-header,
+.ingredient-row {
+
+    display: grid;
+
+    grid-template-columns: 90px 100px 1fr 40px;
+
+    gap: 10px;
+
+    align-items: center;
+
+    margin-bottom: 8px;
+
+}
+
+.ingredient-header {
+
+    font-weight: 600;
+
+}
+
+
+/* ==========================================================
+   Knappar
+   ========================================================== */
+
+button {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    padding: 9px 16px;
+
+    background: #efefef;
+
+    border: 1px solid #888;
+
+    cursor: pointer;
+
+    line-height: 1;
+
+}
+
+button:hover {
+
+    background: #dddddd;
+
+}
+
+.buttons {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+}
+
+
+/* ==========================================================
+   Footer
+   ========================================================== */
+
+footer {
+
+    background: #ececec;
+
+    border-top: 1px solid #bbb;
+
+}
+
+.statusbar {
+
+    display: flex;
+
+    gap: 20px;
+
+    padding: 8px 15px;
+
+    font-size: .85rem;
+
+}
+
+.status {
+
+    margin-left: auto;
+
+    font-weight: 600;
+
+}
+
+
+/* ==========================================================
+   Mobil
+   ========================================================== */
+
+@media (max-width: 900px) {
+
+    .recipe-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .form-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .ingredient-header {
+
+        display: none;
+
+    }
+
+    .ingredient-row {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .buttons {
+
+        flex-direction: column;
+
+    }
+
+}
+/* ==========================================================
+   Validering
+   ========================================================== */
+.validation-error {
+
+    border: 2px solid #d32f2f;
+    border-radius: 4px;
+
+}
+
+.validation-error:focus {
+
+    outline: none;
+    box-shadow: 0 0 4px #d32f2f;
+
+}
+
+#statusMessage {
+
+    min-height: 1.5em;
+
+    margin: 0.5rem 0;
+
+    color: #c62828;
+
+    font-weight: 600;
+
+}
+
+#statusMessage.success {
+
+    color: #2e7d32;
+
+}
+
+.material-symbols-rounded {
+
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+
+    vertical-align: middle;
+
+    font-size: 24px;
+
+    color: #2e7d32;
+
+    flex-shrink: 0;
+
+
+    line-height: 1;
+
+
+}
+
+/* .icon-left {
+
+    margin-right: 6px;
+
+}
+ */
+.delete-button {
+
+    width: 39px;
+    height: 39px;
+
+   
+
+
+}

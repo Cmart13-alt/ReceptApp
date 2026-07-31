@@ -1,0 +1,453 @@
+{
+  "schema": 1,
+  "app": "ReceptApp",
+  "exported": "2026-07-30T20:43:58.628Z",
+  "recipeCount": 5,
+  "recipes": [
+    {
+      "id": 6,
+      "title": "Bönsallad",
+      "portions": 2,
+      "category": "Sallad",
+      "instructions": "Skölj bönorna. Blanda alla ingredienser i en skål och rör om. Smaka av med med salt och peppar. Låt dra i kylen minst 20 min.\n\n",
+      "notes": "Servera till grillat.",
+      "created": "2026-07-30 16:40:45",
+      "updated": "2026-07-30 16:40:45",
+      "ingredients": [
+        {
+          "id": 156,
+          "amount": "2",
+          "unit": "burkar",
+          "ingredient": "blandade bönor(kidney, vita, kikärter)",
+          "sort_order": 1
+        },
+        {
+          "id": 157,
+          "amount": "2",
+          "unit": "st",
+          "ingredient": "morötter i tunna skivor",
+          "sort_order": 2
+        },
+        {
+          "id": 158,
+          "amount": "1",
+          "unit": "st",
+          "ingredient": "rödlök",
+          "sort_order": 3
+        },
+        {
+          "id": 159,
+          "amount": "2",
+          "unit": "st",
+          "ingredient": "skivade vitlöksklyftor",
+          "sort_order": 4
+        },
+        {
+          "id": 160,
+          "amount": "16",
+          "unit": "st",
+          "ingredient": "körsbärstomater, delade",
+          "sort_order": 5
+        },
+        {
+          "id": 161,
+          "amount": "1",
+          "unit": "st",
+          "ingredient": "tunt skivad fänkål",
+          "sort_order": 6
+        },
+        {
+          "id": 162,
+          "amount": "",
+          "unit": "",
+          "ingredient": "färsk persilja eller basilika",
+          "sort_order": 7
+        },
+        {
+          "id": 163,
+          "amount": "2",
+          "unit": "msk",
+          "ingredient": "olivolja",
+          "sort_order": 8
+        },
+        {
+          "id": 164,
+          "amount": "2",
+          "unit": "msk",
+          "ingredient": "röd balsamvinäger",
+          "sort_order": 9
+        },
+        {
+          "id": 165,
+          "amount": "",
+          "unit": "",
+          "ingredient": "salt och peppar",
+          "sort_order": 10
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Kycklingben i currysås",
+      "portions": 4,
+      "category": "Huvudrätt",
+      "instructions": "Sätt ugnen på 180 grader. Lägg kycklingen i en ugnsform, salta lite. \n\nMixa eller vispa ihop alla ingredienser till såsen och häll över kycklingklubborna. \n\nKrydda med lite chiliflakes efter smak.  \n\nGratinera i ca 50 minuter. \n\nServera med ris och sallad.",
+      "notes": "",
+      "created": "2026-07-29 19:07:20",
+      "updated": "2026-07-29 19:07:20",
+      "ingredients": [
+        {
+          "id": 190,
+          "amount": "1",
+          "unit": "kg",
+          "ingredient": "kycklingben eller kycklingklubbor",
+          "sort_order": 1
+        },
+        {
+          "id": 191,
+          "amount": "2.5",
+          "unit": "dl",
+          "ingredient": "grädde",
+          "sort_order": 2
+        },
+        {
+          "id": 192,
+          "amount": "1",
+          "unit": "msk",
+          "ingredient": "kycklingfond",
+          "sort_order": 3
+        },
+        {
+          "id": 193,
+          "amount": "3",
+          "unit": "msk",
+          "ingredient": "tomatpuré",
+          "sort_order": 4
+        },
+        {
+          "id": 194,
+          "amount": "2",
+          "unit": "tsk",
+          "ingredient": "curry",
+          "sort_order": 5
+        },
+        {
+          "id": 195,
+          "amount": "",
+          "unit": "",
+          "ingredient": "salt",
+          "sort_order": 6
+        },
+        {
+          "id": 196,
+          "amount": "",
+          "unit": "",
+          "ingredient": "chiliflakes",
+          "sort_order": 7
+        },
+        {
+          "id": 197,
+          "amount": "6",
+          "unit": "dl",
+          "ingredient": "ris",
+          "sort_order": 8
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Kycklingfile i tomatsås",
+      "portions": 2,
+      "category": "Huvudrätt",
+      "instructions": "Värm olja i en stekpanna och bryn kycklingfiléerna så de får fin färg. Salta och peppra.\n\nFinhacka löken och låt den fräsa med i pannan, tillsätt lite mer olja om det behövs.\n\nRiv ner vitlöken i stekpanna. Stek tills löken börjar bli mjuk.\n\nStrö över vetemjölet, rör runt och häll i tomatkrosset.\n\nSmula i buljongtärningen och tillsätt senapen och balsamvinägern.\n\nHäll i grädden och koka upp. Sänk värmen och låt sjuda i cirka 20 minuter tills filéerna är\ngenomstekta. Späd med lite vatten om såsen blir för tjock.\n\nStrimla basilikan och rör ner på slutet, spara några blad till dekoration.\n\nServera med ugnsbakade potatisklyftor eller ris och en fräsch sallad.",
+      "notes": "",
+      "created": "2026-07-29 17:14:45",
+      "updated": "2026-07-29 17:14:45",
+      "ingredients": [
+        {
+          "id": 37,
+          "amount": "4",
+          "unit": "st",
+          "ingredient": "kycklingﬁléer",
+          "sort_order": 1
+        },
+        {
+          "id": 38,
+          "amount": "1",
+          "unit": "msk",
+          "ingredient": "olja",
+          "sort_order": 2
+        },
+        {
+          "id": 39,
+          "amount": "1",
+          "unit": "st",
+          "ingredient": "gul lök",
+          "sort_order": 3
+        },
+        {
+          "id": 40,
+          "amount": "2",
+          "unit": "st",
+          "ingredient": "vitlöksklyftor",
+          "sort_order": 4
+        },
+        {
+          "id": 41,
+          "amount": "1",
+          "unit": "msk",
+          "ingredient": "vetemjöl (eller redning)",
+          "sort_order": 5
+        },
+        {
+          "id": 42,
+          "amount": "1",
+          "unit": "burk",
+          "ingredient": "krosstomater",
+          "sort_order": 6
+        },
+        {
+          "id": 43,
+          "amount": "1",
+          "unit": "tärning",
+          "ingredient": "kycklingbuljong",
+          "sort_order": 7
+        },
+        {
+          "id": 44,
+          "amount": "2",
+          "unit": "tsk",
+          "ingredient": "senap",
+          "sort_order": 8
+        },
+        {
+          "id": 45,
+          "amount": "1",
+          "unit": "tsk",
+          "ingredient": "balsamvinäger",
+          "sort_order": 9
+        },
+        {
+          "id": 46,
+          "amount": "2",
+          "unit": "dl",
+          "ingredient": "grädde",
+          "sort_order": 10
+        },
+        {
+          "id": 47,
+          "amount": "",
+          "unit": "",
+          "ingredient": "salt och peppar",
+          "sort_order": 11
+        },
+        {
+          "id": 48,
+          "amount": "",
+          "unit": "",
+          "ingredient": "basilika (och salvia)",
+          "sort_order": 12
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Markus korvpasta",
+      "portions": 4,
+      "category": "Huvudrätt",
+      "instructions": "Koka pastan enligt anvisning på paketet.\n\nFräs lök och vitlök i oljan från paprikan i några minuter. Häll i paprikan och låt puttra i några minuter.\n\nStek korven i lite olivolja i en stekpanna.\n\nBlanda med paprikaröran och pastan, vänd ner persilja och tomater. Smaka av med salt, peppar och vinäger",
+      "notes": "",
+      "created": "2026-07-29 20:20:44",
+      "updated": "2026-07-29 20:20:44",
+      "ingredients": [
+        {
+          "id": 198,
+          "amount": "400",
+          "unit": "g",
+          "ingredient": "pasta (rirgatoni, penne)",
+          "sort_order": 1
+        },
+        {
+          "id": 199,
+          "amount": "1",
+          "unit": "st",
+          "ingredient": "gul lök",
+          "sort_order": 2
+        },
+        {
+          "id": 200,
+          "amount": "1",
+          "unit": "st",
+          "ingredient": "purjolök",
+          "sort_order": 3
+        },
+        {
+          "id": 201,
+          "amount": "1",
+          "unit": "burk",
+          "ingredient": "grillad paprika (eller färsk röd)",
+          "sort_order": 4
+        },
+        {
+          "id": 202,
+          "amount": "300",
+          "unit": "g",
+          "ingredient": "chorizo (skivad)",
+          "sort_order": 5
+        },
+        {
+          "id": 203,
+          "amount": "",
+          "unit": "",
+          "ingredient": "olivolja",
+          "sort_order": 6
+        },
+        {
+          "id": 204,
+          "amount": "",
+          "unit": "",
+          "ingredient": "persilja",
+          "sort_order": 7
+        },
+        {
+          "id": 205,
+          "amount": "1",
+          "unit": "burk",
+          "ingredient": "krosstomater",
+          "sort_order": 8
+        },
+        {
+          "id": 206,
+          "amount": "",
+          "unit": "",
+          "ingredient": "salt och peppar",
+          "sort_order": 9
+        },
+        {
+          "id": 207,
+          "amount": "1",
+          "unit": "msk",
+          "ingredient": "rödvinsvinäger",
+          "sort_order": 10
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Pannbiff med löksky",
+      "portions": 4,
+      "category": "Huvudrätt",
+      "instructions": "Sätt ugnen på 200 grader. Blanda mjölk med ströbröd och låt svälla 5-10 minuter.\n\nBlanda ner färsen, riven lök, ägg och kryddor. Forma pannbiffar och stek i smör, ett par minuter på varje sida tills de fått fin färg. Efterstek biffarna i ugn, ca 5-10 minuter tills de är genomstekta. \n\nSkala och skiva löken och bryn i stekpanna eller kastrull. Tillsätt sockret mot slutet och låt det karamelliseras lätt. Pudra över mjölet, tillsätt vatten och buljongtärning. Låt såsen koka ihop en stund och smaka av med salt och peppar. \n\nServera med nykokt potatis och saltgurka.",
+      "notes": "",
+      "created": "2026-07-29 16:04:07",
+      "updated": "2026-07-29 16:04:07",
+      "ingredients": [
+        {
+          "id": 123,
+          "amount": "600",
+          "unit": "g",
+          "ingredient": "blandfärs",
+          "sort_order": 1
+        },
+        {
+          "id": 124,
+          "amount": "1",
+          "unit": "st",
+          "ingredient": "gul lök",
+          "sort_order": 2
+        },
+        {
+          "id": 125,
+          "amount": "1",
+          "unit": "st",
+          "ingredient": "ägg",
+          "sort_order": 3
+        },
+        {
+          "id": 126,
+          "amount": "0.75",
+          "unit": "dl",
+          "ingredient": "ströbröd",
+          "sort_order": 4
+        },
+        {
+          "id": 127,
+          "amount": "1",
+          "unit": "dl",
+          "ingredient": "mjölk",
+          "sort_order": 5
+        },
+        {
+          "id": 128,
+          "amount": "2",
+          "unit": "tsk",
+          "ingredient": "salt",
+          "sort_order": 6
+        },
+        {
+          "id": 129,
+          "amount": "0.5",
+          "unit": "tsk",
+          "ingredient": "vitpeppar",
+          "sort_order": 7
+        },
+        {
+          "id": 130,
+          "amount": "",
+          "unit": "avdelare",
+          "ingredient": "Löksky",
+          "sort_order": 8
+        },
+        {
+          "id": 131,
+          "amount": "2",
+          "unit": "st",
+          "ingredient": "gula lökar",
+          "sort_order": 9
+        },
+        {
+          "id": 132,
+          "amount": "2",
+          "unit": "msk",
+          "ingredient": "smör",
+          "sort_order": 10
+        },
+        {
+          "id": 133,
+          "amount": "2",
+          "unit": "tsk",
+          "ingredient": "socker",
+          "sort_order": 11
+        },
+        {
+          "id": 134,
+          "amount": "1",
+          "unit": "msk",
+          "ingredient": "vetemjöl",
+          "sort_order": 12
+        },
+        {
+          "id": 135,
+          "amount": "1",
+          "unit": "tärning",
+          "ingredient": "oxbuljong",
+          "sort_order": 13
+        },
+        {
+          "id": 136,
+          "amount": "",
+          "unit": "",
+          "ingredient": "salt och peppar",
+          "sort_order": 14
+        },
+        {
+          "id": 137,
+          "amount": "",
+          "unit": "",
+          "ingredient": "saltgurka till servering",
+          "sort_order": 15
+        }
+      ]
+    }
+  ]
+}

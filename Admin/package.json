@@ -1,0 +1,22 @@
+{
+  "name": "receptapp",
+  "version": "1.0.0",
+  "description": "Personlig receptsamling",
+  "main": "src/admin.js",
+  "scripts": {
+    "start": "node src/admin.js",
+    "publish": "node src/publish.js"
+  },
+  "keywords": [
+    "recipes",
+    "pwa",
+    "sqlite"
+  ],
+  "author": "Mårten Sundén",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "sqlite3": "^6.0.1"
+  }
+}

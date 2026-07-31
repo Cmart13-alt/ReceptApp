@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mina recept</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="app">
+
+    <header>
+
+        <h1>
+            <span class="material-symbols-rounded">menu_book</span>
+            Mina recept
+        </h1>
+
+    </header>
+
+    <main class="recipe-layout">
+
+        <!-- =========================
+             Vänster panel
+        ========================== -->
+
+        <aside class="recipe-sidebar">
+
+            <h2>Recept</h2>
+
+            <div class="search-box">
+
+                <span class="material-symbols-rounded search-icon">
+                    search
+                </span>
+
+                <input
+                    type="search"
+                    id="search"
+                    placeholder="Sök recept...">
+
+            </div>
+
+            <div id="recipeList">
+
+                <!-- Recept fylls på av recipe.js -->
+
+            </div>
+
+            <button
+                type="button"
+                id="newRecipe">
+
+                <span class="material-symbols-rounded icon-left">note_add</span>
+
+                Nytt recept
+
+            </button>
+                 </br>
+            <button type="button" id="btnExport">
+
+                <span class="material-symbols-rounded icon-left">publish</span>
+
+                Publicera
+                
+            </button>
+
+        </aside>
+
+        <!-- =========================
+             Höger panel
+        ========================== -->
+
+        <section class="recipe-editor">
+
+            <h2 id="editorTitle">
+
+                Nytt recept
+
+            </h2>
+
+            <div
+                id="statusMessage"
+                class="status-message">
+
+            </div>
+
+            <form
+                id="recipeForm">
+
+                <input
+                    type="hidden"
+                    id="recipeId">
+
+                <fieldset>
+
+                    <legend>Grunduppgifter</legend>
+
+                    <div class="form-row">
+
+                        <label for="title">Titel</label>
+
+                        <input
+                            type="text"
+                            id="title"
+                            required
+                            autofocus>
+
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="form-row">
+
+                            <label for="portions">
+
+                                Portioner
+
+                            </label>
+
+                            <input
+                                type="number"
+                                id="portions"
+                                value="4"
+                                min="1">
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <label for="category">
+
+                                Kategori
+
+                            </label>
+
+                            <select id="category">
+
+                                <option value="">
+                                    -- Välj kategori --
+                                </option>
+
+                                <option>Förrätt</option>
+                                <option>Huvudrätt</option>
+                                <option>Dessert</option>
+                                <option>Sallad</option>
+                                <option>Soppa</option>
+                                <option>Bröd</option>
+                                <option>Dryck</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Ingredienser</legend>
+
+                    <div class="ingredient-header">
+
+                        <span>Mängd</span>
+                        <span>Enhet</span>
+                        <span>Ingrediens</span>
+                        <span></span>
+
+                    </div>
+
+                    <div id="ingredients"></div>
+
+                    <button
+                        type="button"
+                        id="addIngredient">
+
+                        <span class="material-symbols-rounded">add</span>
+
+                        Lägg till ingrediens
+
+                    </button>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Tillagning</legend>
+
+                    <textarea
+                        id="instructions"
+                        rows="8"></textarea>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Anteckningar</legend>
+
+                    <textarea
+                        id="notes"
+                        rows="3"></textarea>
+
+                </fieldset>
+                <div id="statusMessage"></div>
+
+                <div class="buttons">
+
+                    <button
+                        type="submit"
+                        id="saveButton">
+
+                        <span class="material-symbols-rounded icon-left">save</span>
+
+                        Spara recept
+
+                    </button>
+
+                    <button
+                        type="button"
+                        id="deleteRecipe">
+
+                        <span class="material-symbols-rounded icon-left">delete</span>
+
+                        Ta bort
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="statusbar">
+
+            <span id="recipeCount">
+
+                0 recept
+
+            </span>
+
+            <span class="status">
+
+                Redo
+
+            </span>
+
+        </div>
+
+    </footer>
+
+</div>
+
+<datalist id="units">
+
+    <!-- Vikt -->
+    <option value="g">
+    <option value="kg">
+    <option value="mg">
+
+    <!-- Volym -->
+    <option value="ml">
+    <option value="cl">
+    <option value="dl">
+    <option value="l">
+
+    <!-- Antal -->
+    <option value="st">
+    <option value="tsk">
+    <option value="msk">
+    <option value="krm">
+
+    <!-- Vanliga köksenheter -->
+    <option value="nypa">
+    <option value="knivsudd">
+    <option value="näve">
+    <option value="handfull">
+    <option value="knippa">
+    <option value="bukett">
+    <option value="kvist">
+    <option value="blad">
+
+    <!-- Frukt & grönsaker -->
+    <option value="klyfta">
+    <option value="skiva">
+    <option value="bit">
+    <option value="burk">
+    <option value="flaska">
+    <option value="paket">
+    <option value="påse">
+    <option value="tub">
+
+    <!-- Bakning -->
+    <option value="jästpaket">
+
+    <!-- Avdelare -->
+    <option value="avdelare">
+
+</datalist>
+
+<script src="/js/recipe.js"></script>
+
+</body>
+
+</html>
