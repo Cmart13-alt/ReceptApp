@@ -1,5 +1,5 @@
 
-const CACHE_NAME = "recipe-reader-1785495040100";
+const CACHE_NAME = "recipe-reader-1785495108643";
 
 const FILES = [
     "/css/style.css",
