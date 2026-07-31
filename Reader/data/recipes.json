@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "app": "ReceptApp",
-  "exported": "2026-07-31T14:31:23.916Z",
-  "recipeCount": 7,
+  "exported": "2026-07-31T14:35:17.197Z",
+  "recipeCount": 6,
   "recipes": [
     {
       "id": 7,
@@ -232,74 +232,6 @@
           "amount": "",
           "unit": "",
           "ingredient": "chiliflakes",
-          "sort_order": 8
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Kycklingben i currysås",
-      "portions": 4,
-      "category": "Huvudrätt",
-      "instructions": "Sätt ugnen på 180 grader. Lägg kycklingen i en ugnsform, salta lite. \n\nMixa eller vispa ihop alla ingredienser till såsen och häll över kycklingklubborna. \n\nKrydda med lite chiliflakes efter smak.  \n\nGratinera i ca 50 minuter. \n\nServera med ris och sallad.",
-      "notes": "",
-      "created": "2026-07-29 19:07:20",
-      "updated": "2026-07-29 19:07:20",
-      "ingredients": [
-        {
-          "id": 190,
-          "amount": "1",
-          "unit": "kg",
-          "ingredient": "kycklingben eller kycklingklubbor",
-          "sort_order": 1
-        },
-        {
-          "id": 191,
-          "amount": "2.5",
-          "unit": "dl",
-          "ingredient": "grädde",
-          "sort_order": 2
-        },
-        {
-          "id": 192,
-          "amount": "1",
-          "unit": "msk",
-          "ingredient": "kycklingfond",
-          "sort_order": 3
-        },
-        {
-          "id": 193,
-          "amount": "3",
-          "unit": "msk",
-          "ingredient": "tomatpuré",
-          "sort_order": 4
-        },
-        {
-          "id": 194,
-          "amount": "2",
-          "unit": "tsk",
-          "ingredient": "curry",
-          "sort_order": 5
-        },
-        {
-          "id": 195,
-          "amount": "",
-          "unit": "",
-          "ingredient": "salt",
-          "sort_order": 6
-        },
-        {
-          "id": 196,
-          "amount": "",
-          "unit": "",
-          "ingredient": "chiliflakes",
-          "sort_order": 7
-        },
-        {
-          "id": 197,
-          "amount": "6",
-          "unit": "dl",
-          "ingredient": "ris",
           "sort_order": 8
         }
       ]
