@@ -297,23 +297,21 @@ function showRecipe(recipe) {
 
     if (recipe.notes) {
 
-        const heading3 = document.createElement("<h2>");
+        const heading3 = document.createElement("h2");
 
         heading3.textContent = "Anteckningar";
 
         content.appendChild(heading3);
 
-        const notes = document.createElement("<div>");
+        const notes = document.createElement("div");
 
         notes.className = "notes";
- 
+
         notes.textContent = recipe.notes;
 
         content.appendChild(notes);
 
     }
-
-    
     
     //
     // Tillbaka
