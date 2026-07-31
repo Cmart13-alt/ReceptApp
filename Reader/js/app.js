@@ -301,18 +301,28 @@ function showRecipe(recipe) {
 
     content.replaceChildren();
 
-
     //
     // Titel
     //
 
+    const titleRow = document.createElement("div");
+
+    titleRow.className = "recipe-title";
+
+    const icon = document.createElement("span");
+
+    icon.className = "material-symbols-rounded recipe-icon";
+
+    icon.textContent = getRecipeIcon(recipe.category);
+
     const title = document.createElement("h1");
 
-    title.textContent = recipe.portions
-        ? `${recipe.title} (${recipe.portions} p)`
-        : recipe.title;
+    title.textContent = recipe.title;
 
-    content.appendChild(title);
+    titleRow.appendChild(icon);
+    titleRow.appendChild(title);
+
+    content.appendChild(titleRow);
 
     //
     // Ingredienser
@@ -320,7 +330,9 @@ function showRecipe(recipe) {
 
     const heading1 = document.createElement("h2");
 
-    heading1.textContent = "Ingredienser";
+    heading1.textContent = recipe.portions
+        ? `Ingredienser (${recipe.portions} portioner)`
+        : "Ingredienser";
 
     content.appendChild(heading1);
 
