@@ -1,5 +1,5 @@
 
-const CACHE_NAME = "recipe-reader-1785499654672";
+const CACHE_NAME = "recipe-reader-1785499697996";
 
 const FILES = [
     "/css/style.css",
@@ -10,8 +10,7 @@ const FILES = [
     "/icons/maskable-icon-512.png",
     "/index.html",
     "/js/app.js",
-    "/manifest.json",
-    "/version.json"
+    "/manifest.json"
 ];
 
 self.addEventListener("install", event => {
