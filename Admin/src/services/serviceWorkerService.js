@@ -89,6 +89,27 @@ self.addEventListener("activate", event => {
 
 self.addEventListener("fetch", event => {
 
+    const url = new URL(event.request.url);
+
+    //
+    // Hämta alltid senaste versionsfilen
+    //
+
+    if (
+        url.pathname.endsWith("/version.json") ||
+        url.pathname.endsWith("/data/version.json")
+    ) {
+
+        event.respondWith(fetch(event.request));
+
+        return;
+
+    }
+
+    //
+    // Övriga filer hämtas från cachen
+    //
+
     event.respondWith(
 
         caches.match(event.request)
@@ -97,6 +118,7 @@ self.addEventListener("fetch", event => {
     );
 
 });
+
 `;
 
     fs.writeFileSync(
