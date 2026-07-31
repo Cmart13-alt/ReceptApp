@@ -1,10 +1,11 @@
 
-const CACHE_NAME = "recipe-reader-1785498224123";
+const CACHE_NAME = "recipe-reader-1785498403327";
 
 const FILES = [
     "/css/style.css",
     "/data/recipes.json",
     "/data/version.json",
+    "/favicon.ico",
     "/icons/icon-192.png",
     "/icons/icon-512.png",
     "/icons/maskable-icon-512.png",
