@@ -289,7 +289,7 @@ function showRecipe(recipe) {
 
     }
 
-   
+    content.appendChild(instructionCard);
     //
     // Anteckningar
     //
@@ -313,7 +313,7 @@ function showRecipe(recipe) {
 
     }
 
-     content.appendChild(instructionCard);
+    
     
     //
     // Tillbaka
