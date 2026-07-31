@@ -290,18 +290,13 @@ function showRecipe(recipe) {
     }
 
     content.appendChild(instructionCard);
-
     //
     // Anteckningar
     //
 
+
     if (recipe.notes) {
 
-        const heading3 = document.createElement("h2");
-
-        heading3.textContent = "Anteckningar";
-
-        content.appendChild(heading3);
 
         const notes = document.createElement("div");
 
