@@ -4,8 +4,9 @@
     "description": "En enkel och snabb receptsamling.",
     "lang": "sv-SE",
 
-    "start_url": "/reader/",
-    "scope": "/reader/",
+    "start_url": "./",
+    "scope": "./",
+    
 
     "display": "standalone",
     "orientation": "portrait",
